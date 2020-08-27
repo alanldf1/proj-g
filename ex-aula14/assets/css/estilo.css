@@ -1,0 +1,44 @@
+body{
+	margin: 0;
+	font-family: arial;
+	font-size: 18px;
+	text-align: center;
+	padding: 50px 30px;
+}
+
+body *{
+	box-sizing: border-box;
+	border:1px solid;
+}
+
+header, nav, footer {
+	height: 100px; 
+	line-height: 100px;
+}
+
+section, article {
+	height: 300px;
+	line-height: 300px; 
+}
+
+
+aside {
+	line-height: 500px;
+	padding-right: 50px;
+	height: 600px;
+	width: 500px;
+	position: absolute;
+	top: 250px;
+	left: 30px;
+}
+main{
+	padding-left: 500px;
+	border:0;
+}
+
+header,nav,section{
+	border-bottom:0;
+}
+aside{border-right: 0;}
+
+footer{border-top: 0}
