@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			label{
+				width: 100%;
+				padding: 5px;
+			}
+			input {
+				padding: 5px;
+			}
+			div {
+				margin-bottom: 10px;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+
+		<form name="formularioCadastro" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+			<label>Nome:<label>
+			<div><input type="text" name="nome" /></div>
+
+			<label>Idade:<label>
+			<div><input type="text" name="idade" /></div>
+
+			<label>E-mail:<label>
+			<div><input type="text" name="email" /></div>
+
+			<label>Telefone:<label>
+			<div><input type="text" name="telefone" /></div>
+
+			<input id="sub" type="submit" value="Cadastrar" >
+
+		</form>
+
+		<script>
+
+			function validateForm() {
+				var nome = document.forms["formularioCadastro"]["nome"].value;
+				var idade = document.forms["formularioCadastro"]["idade"].value;
+				var email = document.forms["formularioCadastro"]["email"].value;
+				var telefone = document.forms["formularioCadastro"]["telefone"].value;
+
+				if (nome == "") {
+					alert("Preencha seu nome");
+					return false;
+				}
+
+				if (idade == "") {
+					alert("Precisamos saber sua idade");
+					return false;
+				}
+
+				if (idade < 18) {
+					alert("Não é possível efetuar o cadastro pois você deve ter mais de 18 anos")
+					return false;
+				}
+
+				if (email == "") {
+					alert("Preencha seu email")
+					return false;
+				}
+
+				if (telefone == "") {
+					alert("Preencha seu telefone")
+					return false;
+				}
+	
+			}
+		</script>
+
+
+		
+
+	</body>
+</html>
