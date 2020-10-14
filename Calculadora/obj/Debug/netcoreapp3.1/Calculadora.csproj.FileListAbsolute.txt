@@ -1,0 +1,13 @@
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.exe
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.deps.json
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.json
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.dev.json
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.dll
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.pdb
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csprojAssemblyReference.cache
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfoInputs.cache
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfo.cs
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csproj.CoreCompileInputs.cache
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.dll
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.pdb
+D:\xampp\htdocs\aulaCSharp\Calculadora\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.genruntimeconfig.cache
