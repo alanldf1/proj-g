@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Calculadora
 
@@ -11,80 +15,81 @@ namespace Calculadora
         static void Main(string[] args)
 
         {
+            Console.Title = "Calculadora";
+            Console.WriteLine("==================================== Calculadora ====================================");
 
-            int num1, num2;
+            double v1 = 0, v2 = 0, result, numero;
+            string op, valueTyped;
+            bool isNumeroInteiro;
 
-            int resul = 0;
+            Console.WriteLine("Seu nome: ");
+            string userName = Console.ReadLine ();
 
+            Console.WriteLine("Digite o primeiro valor que deseja calcular: ");
+            valueTyped = Console.ReadLine();
 
+            isNumeroInteiro = double.TryParse(valueTyped, out numero);
 
-            Console.WriteLine("Digite o primeiro numero");
-
-            num1 = double.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite o segundo numero");
-
-            num2 = double.Parse(Console.ReadLine());
-
-
-
-            Console.Clear();
-
-
-
-            while (resul != 5)
-
+            if (isNumeroInteiro)
             {
-
-                Console.WriteLine("Para somar digite 1");
-
-                Console.WriteLine("Para subtrair digite 2");
-
-                Console.WriteLine("Para dividir digite 3");
-
-                Console.WriteLine("Para multiplicar digite 4");
-
-                Console.WriteLine("Para sair digite 5");
-
-                resul = int.Parse(Console.ReadLine());
-
-                if (resul == 1)
-
-                {
-
-                    Console.WriteLine("Soma = {0}", num1 + num2);
-
-                }
-
-                if (resul == 2)
-
-                {
-
-                    Console.WriteLine("Subtração = {0}", num1 - num2);
-
-                }
-
-                if (resul == 3)
-
-                {
-
-                    Console.WriteLine("Divisão = {0}", num1 / num2);
-
-                }
-
-                if (resul == 4)
-
-                {
-
-                    Console.WriteLine("Multiplicação = {0}", num1 * num2);
-
-                }
-
-                Console.ReadLine();
-
-                Console.Clear();
-
+                v1 = Math.Round(double.Parse(valueTyped), 4);
             }
+            else
+            {
+                Console.WriteLine("Digite um número válido");
+            }
+
+            Console.WriteLine("Digite a operação que deseja realizar ('/ | + | * | -')");
+            op = Console.ReadLine();
+
+            Console.WriteLine("Digite o segundo valor: ");
+            valueTyped = Console.ReadLine();
+            isNumeroInteiro = double.TryParse(valueTyped, out numero);
+
+            if (isNumeroInteiro)
+            {
+                v2 = Math.Round(double.Parse(valueTyped), 4);
+            }
+            else
+            {
+                Console.WriteLine("Digite um número válido");
+            }
+
+            switch (op)
+            {
+                case "+":
+                    Console.Clear();
+                    result = Math.Round(v1 + v2, 4);
+                    Console.WriteLine("Seu nome é : " + userName + "\n" + $"O resultado do cálculo: { v1 } {'+'} { v2 } = {result}");
+                    Console.WriteLine("\n Pressione enter para finalizar o programa.");
+                    break;
+
+                case "-":
+                    Console.Clear();
+                    result = Math.Round(v1 - v2, 4);
+                    Console.WriteLine("Seu nome é : " + userName + "\n" + $"O resultado do cálculo: { v1 } {'-'} { v2 } = {result}");
+                    Console.WriteLine("\n Pressione enter para finalizar o programa.");
+                    break;
+
+                case "*":
+                    Console.Clear();
+                    result = Math.Round(v1 * v2, 4);
+                    Console.WriteLine("Seu nome é : " + userName + "\n" + $"O resultado do cálculo: { v1 } {'*'} { v2 } = {result}");
+                    Console.WriteLine("\n Pressione enter para finalizar o programa.");
+                    break;
+
+                case "/":
+                    Console.Clear();
+                    result = Math.Round(v1 / v2, 4);
+                    Console.WriteLine("Seu nome é : " + userName + "\n" + $"O resultado do cálculo: { v1 } {'/'} { v2 } = {result}");
+                    Console.WriteLine("\n Pressione enter para finalizar o programa.");
+                    break;
+                default:
+                    Console.WriteLine("Digite um operação válida");
+                    break;
+            }
+
+            Console.ReadKey();
 
         }
 
